@@ -368,11 +368,30 @@ public class RustingUnits implements ContentList{
                         shots = 0;
                     }}
             );
-            specialMounts.add(
+            specialMounts.addAll(
                     new PointLaserMountType("austute-laser"){{
                         laserSpeed = 0.5f;
                         reloadTime = 75;
                         rotateSpeed = 0;
+                        x -= 5;
+                    }},
+                    new PointLaserMountType("austute-laser"){{
+                        laserSpeed = 0.5f;
+                        reloadTime = 75;
+                        rotateSpeed = 0;
+                        y -= 5;
+                    }},
+                    new PointLaserMountType("austute-laser"){{
+                        laserSpeed = 0.5f;
+                        reloadTime = 75;
+                        rotateSpeed = 0;
+                        x += 5;
+                    }},
+                    new PointLaserMountType("austute-laser"){{
+                        laserSpeed = 0.5f;
+                        reloadTime = 75;
+                        rotateSpeed = 0;
+                        y += 5;
                     }}
             );
             constructor = SpecialWeaponsFlying::new;
